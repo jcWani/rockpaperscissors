@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissors</h1>
+      <h2 class="message">What will you throw?</h2>
+      <h3 class="player-message">Player chooses rock</h3>
+      <div class="player-container">
+        <div class="buttons-container player-btn-container">
+          <i class="icon player-icon fa-regular fa-hand-back-fist"></i>
+          <i class="icon player-icon fa-regular fa-hand player-choice"></i>
+          <i class="icon player-icon fa-regular fa-hand-scissors"></i>
+        </div>
+      </div>
+      <div class="computer-container">
+        <div class="buttons-container computer-btn-container">
+          <i class="icon computer-icon fa-regular fa-hand-back-fist computer-rock"></i>
+          <i class="icon computer-icon fa-regular fa-hand computer-paper"></i>
+          <i
+            class="icon computer-icon fa-regular fa-hand-scissors computer-scissors computer-choice"
+          ></i>
+        </div>
+      </div>
+      <h3 class="computer-message">Computer chooses paper</h3>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #8fb3ff;
+  --secondary-color: #001952;
+  --on-primary-color: #000;
+  --accent: #f199bf;
+  --background: #000000;
+  --text: #ffffff;
+  --box-shadow-container: 0 12px 24px rgba(255, 255, 255, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  height: 500px;
+  width: 600px;
+  max-width: 700px;
+  padding: 20px 0;
+  border: 1px solid var(--text);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-container);
+
+  position: relative;
+}
+
+/* HEADING */
+h1 {
+  font-family: "Abril Fatface", cursive;
+  background: linear-gradient(to right, var(--primary-color), var(--accent));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Player container */
+
+.player-container {
+  margin-top: 25px;
+  margin-bottom: 32px;
+
+  padding-bottom: 32px;
+  border-bottom: 1.5px solid var(--text);
+}
+
+.computer-container {
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+/* Icons */
+.icon {
+  font-size: 32px;
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--on-primary-color);
+  background: var(--primary-color);
+
+  /* border: 1px solid #fff; */
+  transition: all 0.3s;
+}
+
+.player-icon {
+  cursor: pointer;
+}
+
+.player-icon:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Choice */
+.player-choice {
+  color: var(--text);
+  background: var(--secondary-color);
+  transform: translateY(-10px);
+}
+
+.computer-choice {
+  color: var(--text);
+  background: var(--secondary-color);
+  transform: translateY(-10px);
+}
+
+/* Querries */
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 0 20px;
+  }
+}
